@@ -139,19 +139,4 @@ class NewsController extends ResourceController
         $this->newsModel->delete($id);
         return redirect()->to('/newscontroller');
     }
-    
-    public function view($id) {
-        // Ambil berita berdasarkan ID dari database
-        $newscontroller = $this->newsModel->find($id);
-    
-        // Jika berita tidak ditemukan, tampilkan halaman 404 atau berikan pesan kesalahan
-        if (!$newscontroller) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException("Berita dengan ID $id tidak ditemukan.");
-        }
-    
-        // Siapkan data untuk tampilan
-        $data['item'] = $newscontroller; // Menyimpan item berita dalam array data
-        return view('backoffice/newscontroller/indexview', $data); // Tampilkan tampilan berita
-    }
-    
 }

@@ -12,13 +12,10 @@
                     <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
                         placeholder="Masukkan Judul Berita Terbaru" required name="judul">
                 </div>
-
                 <div class="form-group">
                     <label for="berita">Berita Terbaru</label>
-                    <input type="text" class="form-control" id="berita" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Berita Terbaru" required name="berita">
+                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Berita Terbaru" required name="berita"></textarea>
                 </div>
-
                 <div class="form-group">
                     <label for="photo">Photo</label>
                     <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">

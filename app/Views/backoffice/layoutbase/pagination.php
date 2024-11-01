@@ -11,7 +11,7 @@
         <li class="page-item">
             <a class="page-link" href="<?= $pager->getPreviousPage() ?>" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Sebelumnya</span>
             </a>
         </li>
         <?php endif ?>
@@ -26,12 +26,12 @@
         <li class="page-item">
             <a class="page-link" href="<?= $pager->getNextPage() ?>" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Selanjutnya</span>
             </a>
         </li>
         <li class="page-item">
             <a class="page-link" href="<?= $pager->getLast() ?>" aria-label="Next">
-                <span aria-hidden="true">Last</span>
+                <span aria-hidden="true">Terakhir</span>
             </a>
         </li>
         <?php endif ?>

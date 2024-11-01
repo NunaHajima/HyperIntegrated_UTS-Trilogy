@@ -17,12 +17,12 @@
                 <tbody>
                     <?php $no = 0; ?>
                     <?php foreach ($newscontroller as $item): ?>
-                    <tr onclick="window.location='/newscontroller/view/<?= $item['id'] ?>';" style="cursor: pointer;">
+                    <tr>
                         <td><?= $no += 1; ?></td>
-                        <td><?= $item['judul'] ?></td>
-                        <td><?= $item['berita'] ?></td>
-                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 60px; height: 60px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
-                        <td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['judul']), 0, 40)) . (str_word_count($item['judul']) > 10 ? '...' : '') ?></td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['berita']), 0, 40)) . (str_word_count($item['berita']) > 10 ? '...' : '') ?></td>
+                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 300px; height: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
+                        <td class="text-center align-middle" style="height: 100px;"> <!-- Menambahkan kelas untuk penempatan tengah -->
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
                                 <a href="/newscontroller/<?= $item['id'] ?>/edit" 
                                 class="btn btn-info btn-sm text-white d-flex align-items-center justify-content-center" 
