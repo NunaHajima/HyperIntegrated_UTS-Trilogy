@@ -1,46 +1,44 @@
 <?= $this->extend('backoffice/layoutbase/base') ?>
 <?= $this->section('content') ?>
-<div class="container mt-2">
+<div class="container mt-0">
     <div class="row mb-4">
         <div class="col-12">
-            <h2 class="mb-4 text-center">Berita</h2>
-            <br>
-            <table class="table table-hover text-center">
+            <h2 class="mb-4 text-center" style="font-weight: bold;">Berita</h2>
+            <table class="table table-hover table-striped table-bordered text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 4px; overflow: hidden;">
                 <thead>
                     <tr>
-                        <th scope="col ">No.</th>
-                        <th scope="col ">Title</th>
-                        <th scope="col ">News</th>
-                        <th scope="col ">Photo</th>
-                        <th scope="col ">Action</th>
+                        <th scope="col" style="font-size: 1em;">No.</th>
+                        <th scope="col" style="font-size: 1em;">Title</th>
+                        <th scope="col" style="font-size: 1em;">News</th>
+                        <th scope="col" style="font-size: 1em;">Photo</th>
+                        <th scope="col" style="font-size: 1em;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 0; ?>
                     <?php foreach ($newscontroller as $item): ?>
-                    <tr>
+                    <tr onclick="window.location='/newscontroller/view/<?= $item['id'] ?>';" style="cursor: pointer;">
                         <td><?= $no += 1; ?></td>
                         <td><?= $item['judul'] ?></td>
                         <td><?= $item['berita'] ?></td>
-                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" width=100 height=100></td>
+                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 60px; height: 60px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
                         <td>
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
-                                <!-- Tombol Edit -->
                                 <a href="/newscontroller/<?= $item['id'] ?>/edit" 
-                                class="btn btn-info text-white d-flex align-items-center justify-content-center mx-1"
-                                style="padding: 0; height: 36px; width: 36px; margin: 0; display: flex;">
-                                    <i class='bx bx-pencil' style="font-size: 1.2em; margin: auto;"></i>
+                                class="btn btn-info btn-sm text-white d-flex align-items-center justify-content-center" 
+                                style="height: 36px; width: 36px; transition: background-color 0.3s;" 
+                                title="Edit Berita">
+                                    <i class='bx bx-pencil' style="font-size: 1.2em;"></i>
                                 </a>
-                                
-                                <!-- Tombol Delete -->
                                 <form action="/newscontroller/<?= $item['id'] ?>" method="POST" 
                                     onsubmit="return confirm('Apakah Anda Yakin ?')" 
                                     class="d-inline" style="margin: 0;">
                                     <input type="hidden" name="_method" value="DELETE" />
-                                    <button class="btn btn-danger text-white d-flex align-items-center justify-content-center mx-1" 
+                                    <button class="btn btn-danger btn-sm text-white d-flex align-items-center justify-content-center" 
                                             type="submit" 
-                                            style="padding: 0; height: 36px; width: 36px; margin: 0; display: flex;">
-                                        <i class='bx bx-trash' style="font-size: 1.2em; margin: auto;"></i>
+                                            title="Hapus Berita" 
+                                            style="height: 36px; width: 36px; transition: background-color 0.3s;">
+                                        <i class='bx bx-trash' style="font-size: 1.2em;"></i>
                                     </button>
                                 </form>
                             </div>

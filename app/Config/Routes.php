@@ -20,6 +20,7 @@ $routes->get('/aboutus', 'AboutUs::index');
 $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('newscontroller');
 });
+$routes->get('newscontroller/view/(:num)', 'NewsController::view/$1');
 
 /*Login*/
 $routes->resource('login');

@@ -11100,3 +11100,49 @@ body {
   /* Vertically center the text there */
   background-color: #f5f5f5;
 }
+
+/* Header tabel dengan warna abu-abu lebih besar */
+.table thead th {
+  background-color: #6c757d; /* Abu-abu medium */
+  color: white;
+  font-size: 1.1em; /* Menambah ukuran teks header */
+  padding: 20px; /* Memberikan padding yang lebih besar */
+}
+
+/* Hilangkan border radius pada tabel */
+.table {
+  border: 1px solid #b0b0b0; /* Border abu-abu */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Warna latar belakang baris tabel saat di-hover */
+.table tbody tr:hover {
+  background-color: #e0e0e0; /* Abu-abu terang */
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
+}
+
+/* Tampilan teks dan border di setiap sel */
+.table td, .table th {
+  border: 1px solid #d1d1d1; /* Warna border sel abu-abu muda */
+  color: #000000; /* Warna teks abu-abu gelap */
+}
+
+/* Warna pagination agar selaras dengan tema abu-abu */
+.pagination li a, .pagination li span {
+  color: #000000; /* Abu-abu medium */
+  padding: 0.5em 1em;
+  margin: 0.2em;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.pagination li a:hover {
+  background-color: #005eff; /* Warna abu-abu medium */
+  color: white;
+}
+/* CSS untuk memperkecil font header tabel */
+.small-header {
+  font-size: 1.5em;
+}

@@ -1,7 +1,7 @@
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
     <div class="container px-5">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#">
             <img src="/template/assets/logohyper.png" alt="" style="width: 300px; height: auto;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
