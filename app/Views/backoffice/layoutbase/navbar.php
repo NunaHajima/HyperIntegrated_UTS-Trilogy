@@ -9,8 +9,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/newscontroller">News</a>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/newscontroller" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        News
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="/newscontroller">News</a></li>
+                        <li><a class="dropdown-item" href="/newscontroller/new">Tambahkan Berita</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Our Services</a>

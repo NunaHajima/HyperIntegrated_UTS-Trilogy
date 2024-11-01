@@ -20,7 +20,8 @@ class NewsController extends ResourceController
 
     public function index()
     {
-        $newscontroller = $this->newsModel->paginate(10, 'newscontroller');
+        // Mengambil data berita dengan urutan terbaru di atas dan paginasi
+        $newscontroller = $this->newsModel->orderBy('id', 'DESC')->paginate(10, 'newscontroller');
         
         $newscrud = [
             "newscontroller" => $newscontroller,
@@ -29,7 +30,6 @@ class NewsController extends ResourceController
 
         echo view('/backoffice/newscontroller/index', $newscrud);
     }
-
     /**
      * Return the properties of a resource object.
      *
