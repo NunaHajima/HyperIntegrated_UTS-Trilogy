@@ -11103,7 +11103,7 @@ body {
 
 /* Header tabel dengan warna abu-abu lebih besar */
 .table thead th {
-  background-color: #6c757d; /* Abu-abu medium */
+  background-color: #374f52 ; /* Abu-abu medium */
   color: white;
   font-size: 1.1em; /* Menambah ukuran teks header */
   padding: 15px; /* Memberikan padding yang lebih besar */
@@ -11145,4 +11145,22 @@ body {
 /* CSS untuk memperkecil font header tabel */
 .small-header {
   font-size: 1.5em;
+}
+
+/*Dropdown*/
+ /* Gaya untuk dropdown menu */
+ .dropdown-menu {
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #374f52;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #d8e2dc;
+  color: #1b3b46;
 }

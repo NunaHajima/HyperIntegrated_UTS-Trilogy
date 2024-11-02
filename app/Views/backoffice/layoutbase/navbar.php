@@ -9,17 +9,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/newscontroller" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         News
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a class="dropdown-item" href="/newscontroller">News</a></li>
-                        <li><a class="dropdown-item" href="/newscontroller/new">Tambahkan Berita</a></li>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="servicesDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                        <li><a class="dropdown-item" href="/newscontroller">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/newscontroller/new">Add News</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Services</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/servicescontroller" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services
+                    </a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="servicesDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                        <li><a class="dropdown-item" href="/servicescontroller">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/servicescontroller/new">Add Services</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Portofolio</a>

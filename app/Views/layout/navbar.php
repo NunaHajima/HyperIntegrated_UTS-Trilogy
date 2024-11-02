@@ -1,5 +1,5 @@
 <!-- Responsive navbar-->
-<nav class="navbar navbar-expand-lg navbar-white bg-white">
+<nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
     <div class="container px-5">
         <a class="navbar-brand" href="/">
             <img src="template/assets/logohyper.png" alt="" style="width: 300px; height: auto;">

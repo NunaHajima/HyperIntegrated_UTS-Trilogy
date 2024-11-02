@@ -20,7 +20,11 @@ $routes->get('/aboutus', 'AboutUs::index');
 $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('newscontroller');
 });
-// Di dalam file Routes.php
+
+$routes->group('', ['filter' => 'authMiddleware'], function($routes) {
+    $routes->resource('servicescontroller');
+});
+
 
 /*Login*/
 $routes->resource('login');
