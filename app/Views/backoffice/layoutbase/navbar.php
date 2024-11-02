@@ -27,8 +27,14 @@
                         <li><a class="dropdown-item" href="/servicescontroller/new">Add Services</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portofolio</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/portofoliocontroller" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Portofolio
+                    </a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="servicesDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                        <li><a class="dropdown-item" href="/portofoliocontroller">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/portofoliocontroller/new">Add Portofolio</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>

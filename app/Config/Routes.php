@@ -25,6 +25,9 @@ $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('servicescontroller');
 });
 
+$routes->group('', ['filter' => 'authMiddleware'], function($routes) {
+    $routes->resource('portofoliocontroller');
+});
 
 /*Login*/
 $routes->resource('login');
