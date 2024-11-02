@@ -5,17 +5,17 @@
         <div class="col-12">
             <h5 class="mb-4">Perbarui Berita "<?= $data['judul'] ?>"</h5>
 
-            <form action="/newscontroller/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data">
+            <form action="/servicescontroller/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_method" value="PUT" />
 
                 <div class="form-group">
                     <label for="judul">Judul Berita</label>
                     <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Judul Berita Terbaru" required name="judul" value="<?= $data['judul'] ?>">
+                        placeholder="Masukkan Judul" required name="judul" value="<?= $data['judul'] ?>">
                 </div>
                 <div class="form-group">
                     <label for="berita">Berita</label>
-                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Berita Terbaru" required name="berita"><?= $data['berita'] ?></textarea>
+                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Deskripsi" required name="berita"><?= $data['berita'] ?></textarea>
                 </div>
                 <div class="form-group">
                     <label for="photo">Current Photo:</label>

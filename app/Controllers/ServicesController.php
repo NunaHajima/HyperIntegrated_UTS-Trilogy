@@ -69,7 +69,7 @@ class ServicesController extends ResourceController
             $photo->move('photos', $fileName); // Memindahkan file ke public/photos dengan nama acak
         }
 
-        $newscrud = [
+        $servicecrud = [
             "id" => uniqid(),
             "judul" => $this->request->getPost('judul'),
             "service" => $this->request->getPost('berita'),

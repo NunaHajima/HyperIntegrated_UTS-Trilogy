@@ -3,19 +3,19 @@
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12">
-            <h5 class="mb-4">Tambahkan Berita Baru</h5>
+            <h5 class="mb-4">Tambahkan Jenis Layanan</h5>
 
-            <form action="/newscontroller" method="post" enctype="multipart/form-data">
+            <form action="/servicescontroller" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
                     <label for="judul">Judul Berita</label>
                     <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Judul Berita Terbaru" required name="judul">
+                        placeholder="Masukkan Judul " required name="judul">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="berita">Berita Terbaru</label>
-                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Berita Terbaru" required name="berita"></textarea>
+                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Deskripsi Terbaru" required name="berita"></textarea>
                 </div>
                 <br>
                 <div class="form-group">

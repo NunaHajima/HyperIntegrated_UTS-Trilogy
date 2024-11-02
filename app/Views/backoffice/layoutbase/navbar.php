@@ -34,6 +34,9 @@
                     <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">Testimoni</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout</a>
                 </li>
             </ul>

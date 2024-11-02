@@ -3,7 +3,7 @@
 <div class="container mt-0">
     <div class="row mb-4">
         <div class="col-12">
-            <h2 class="mb-4 text-center" style="font-weight: bold;">Berita</h2>
+            <h2 class="mb-4 text-center" style="font-weight: bold;">Our Services</h2>
             <!-- Table -->
             <table class="table table-hover table-striped table-bordered text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 4px; overflow: hidden;">
                 <thead>
@@ -20,8 +20,8 @@
                     <?php foreach ($servicecontroller as $item): ?>
                     <tr>
                         <td><?= $no += 1; ?></td>
-                        <td><?= implode(' ', array_slice(explode(' ', $item['judul']), 0, 40)) . (str_word_count($item['judul']) > 10 ? '...' : '') ?></td>
-                        <td><?= implode(' ', array_slice(explode(' ', $item['service']), 0, 40)) . (str_word_count($item['service']) > 10 ? '...' : '') ?></td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['judul']), 0, 80)) . (str_word_count($item['judul']) > 10 ? '...' : '') ?></td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['service']), 0, 80)) . (str_word_count($item['service']) > 10 ? '...' : '') ?></td>
                         <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 300px; height: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
                         <td class="text-center align-middle" style="height: 100px;">
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
