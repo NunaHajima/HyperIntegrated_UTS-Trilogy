@@ -11164,3 +11164,20 @@ body {
   background-color: #d8e2dc;
   color: #1b3b46;
 }
+
+/* Style untuk submenu agar muncul di sebelah kanan */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}

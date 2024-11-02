@@ -45,8 +45,22 @@
                         <li><a class="dropdown-item" href="/aboutuscontroller/new">Add Employee</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimoni</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lainnya
+                    </a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="servicesDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="testimoniDropdown" data-bs-toggle="dropdown">
+                                Testimoni
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="testimoniDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                                <li><a class="dropdown-item" href="/testimonicontroller">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="/testimonicontroller/new">Add Testimoni</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Slider</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout</a>

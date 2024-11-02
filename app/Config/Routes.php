@@ -33,6 +33,10 @@ $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('aboutuscontroller');
 });
 
+$routes->group('', ['filter' => 'authMiddleware'], function($routes) {
+    $routes->resource('testimonicontroller');
+});
+
 /*Login*/
 $routes->resource('login');
 $routes->resource('register');
