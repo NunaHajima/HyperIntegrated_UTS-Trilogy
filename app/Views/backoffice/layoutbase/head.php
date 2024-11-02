@@ -2,7 +2,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CV. Hyper Integrated Technology</title>
+        <title>Admin Controller</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/template/assets/headlogo.png" />
         <!-- Bootstrap icons-->

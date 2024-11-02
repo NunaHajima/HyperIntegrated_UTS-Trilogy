@@ -9,33 +9,29 @@
                 <thead>
                     <tr>
                         <th scope="col" style="font-size: 1em;">No.</th>
-                        <th scope="col" style="font-size: 1em;">Title</th>
-                        <th scope="col" style="font-size: 1em;">Description</th>
+                        <th scope="col" style="font-size: 1em;">Name</th>
+                        <th scope="col" style="font-size: 1em;">Job</th>
                         <th scope="col" style="font-size: 1em;">Photo</th>
-                        <th scope="col" style="font-size: 1em;">Photo2</th>
-                        <th scope="col" style="font-size: 1em;">Photo3</th>
                         <th scope="col" style="font-size: 1em;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 0; ?>
-                    <?php foreach ($portofoliocontroller as $item): ?>
+                    <?php foreach ($aboutcontroller as $item): ?>
                     <tr>
                         <td><?= $no += 1; ?></td>
-                        <td><?= implode(' ', array_slice(explode(' ', $item['judul']), 0, 10)) . (str_word_count($item['judul']) > 10 ? '...' : '') ?></td>
-                        <td><?= implode(' ', array_slice(explode(' ', $item['deskripsi']), 0, 30)) . (str_word_count($item['deskripsi']) > 10 ? '...' : '') ?></td>
-                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 100px; height: 100px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
-                        <td><img src="/photos2/<?= $item['photo2'] ?>" alt="" style="width: 100px; height: 100px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
-                        <td><img src="/photos3/<?= $item['photo3'] ?>" alt="" style="width: 100px; height: 100px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['name']), 0, 80)) . (str_word_count($item['name']) > 10 ? '...' : '') ?></td>
+                        <td><?= implode(' ', array_slice(explode(' ', $item['job']), 0, 80)) . (str_word_count($item['job']) > 10 ? '...' : '') ?></td>
+                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 300px; height: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
                         <td class="text-center align-middle" style="height: 100px;">
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
-                                <a href="/portofoliocontroller/<?= $item['id'] ?>/edit" 
+                                <a href="/aboutuscontroller/<?= $item['id'] ?>/edit" 
                                 class="btn btn-info btn-sm text-white d-flex align-items-center justify-content-center" 
                                 style="height: 36px; width: 36px; transition: background-color 0.3s;" 
                                 title="Edit Berita">
                                     <i class='bx bx-pencil' style="font-size: 1.2em;"></i>
                                 </a>
-                                <form action="/portofoliocontroller/<?= $item['id'] ?>" method="POST" 
+                                <form action="/aboutuscontroller/<?= $item['id'] ?>" method="POST" 
                                     onsubmit="return confirm('Apakah Anda Yakin ?')" 
                                     class="d-inline" style="margin: 0;">
                                     <input type="hidden" name="_method" value="DELETE" />

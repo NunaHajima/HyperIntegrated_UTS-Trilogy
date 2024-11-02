@@ -29,6 +29,10 @@ $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('portofoliocontroller');
 });
 
+$routes->group('', ['filter' => 'authMiddleware'], function($routes) {
+    $routes->resource('aboutuscontroller');
+});
+
 /*Login*/
 $routes->resource('login');
 $routes->resource('register');

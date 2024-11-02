@@ -3,32 +3,33 @@
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12">
-            <h5 class="mb-4">Tambah Portofolio"<?= $data['judul'] ?>"</h5>
+            <h5 class="mb-4">Perbarui Data"<?= $data['name'] ?>"</h5>
 
-            <form action="/portofoliocontroller/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data">
+            <form action="/aboutuscontroller/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_method" value="PUT" />
 
                 <div class="form-group">
-                    <label for="judul">Judul Portofolio</label>
-                    <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Judul Portofolio" required name="judul" value="<?= $data['judul'] ?>">
+                    <label for="name">Nama</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" 
+                        placeholder="Masukkan Nama" required name="name" value="<?= $data['name'] ?>">
                 </div>
+                <br>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" id="deskripsi" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Deskripsi Portofolio" required name="deskripsi" value="<?= $data['deskripsi'] ?>">
+                    <label for="job">Deskripsi Pekerjaan</label>
+                    <textarea class="form-control" id="job" rows="5" placeholder="Masukkan Deskripsi Pekerjaan" required name="job"><?= $data['job'] ?></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="photo">Current Photo:</label>
+                    <?php if ($data['photo']) { ?>
+                        <img src="/photos/<?= $data['photo'] ?>" alt="" width=100 height=100>
+                    <?php } else { ?>
+                        <p>No Photo.</p>
+                    <?php } ?>
                 </div>
                 <div class="form-group">
                     <label for="photo">Photo</label>
                     <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">
-                </div>
-                <div class="form-group">
-                    <label for="photo2">Photo2</label>
-                    <input type="file" class="form-control" id="photo2" aria-describedby="photoHelp" name="photo2">
-                </div>
-                <div class="form-group">
-                    <label for="photo3">Photo3</label>
-                    <input type="file" class="form-control" id="photo3" aria-describedby="photoHelp" name="photo3">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Kirim</button>

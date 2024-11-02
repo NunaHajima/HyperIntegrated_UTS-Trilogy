@@ -3,7 +3,7 @@
 <div class="container mt-0">
     <div class="row mb-4">
         <div class="col-12">
-            <h2 class="mb-4 text-center" style="font-weight: bold;">Our Services</h2>
+            <h2 class="mb-4 text-center" style="font-weight: bold;">Portofolio</h2>
             <!-- Table -->
             <table class="table table-hover table-striped table-bordered text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 4px; overflow: hidden;">
                 <thead>
