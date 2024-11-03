@@ -9,7 +9,7 @@ use CodeIgniter\Router\RouteCollection;
 /*Tampilan Website*/
 $routes->get('/', 'Home::index');
 $routes->get('/news', 'News::index');
-$routes->get('/news2', 'News2::index');
+$routes->get('news/detail/(:num)', 'News::detail/$1');
 $routes->get('/services', 'OurServices::index');
 $routes->get('/services2', 'OurServices2::index');
 $routes->get('/portofolio', 'Portofolio::index');

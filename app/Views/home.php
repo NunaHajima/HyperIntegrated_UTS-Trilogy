@@ -55,7 +55,7 @@
                                 <div class="card-body p-4">
                                     <div class="text-center">
                                         <!-- News title-->
-                                        <h5><?php echo $newsItem['judul']; ?></h5>
+                                        <h5 style="font-size: 16px;"><?php echo $newsItem['judul']; ?></h5>
                                     </div>
                                 </div>
                             </div>
@@ -74,8 +74,8 @@
                     <div class="testimoni-box">
                         <img src="/photos/<?php echo $testimoni['photo']; ?>" alt="Testimoni Image">
                         <div class="testimoni-content">
-                            <h2 style="font-weight: normal;" class="fw-bolder"><?php echo $testimoni['name']; ?></h2>
-                            <p><?php echo $testimoni['desc']; ?></p>
+                            <h2 style="font-size: 18px;" class="fw-bolder"><?php echo $testimoni['name']; ?></h2>
+                            <p style="font-size: 15px;"><?php echo $testimoni['desc']; ?></p>
                             <div class="rating">
                                 <?php for ($i = 1; $i <= 5; $i++): ?>
                                     <i class="<?php echo $i <= $testimoni['rating'] ? 'fas' : 'far'; ?> fa-star"></i>

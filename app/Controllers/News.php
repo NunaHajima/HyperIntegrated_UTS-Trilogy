@@ -97,4 +97,18 @@ class News extends ResourceController
     {
         //
     }
+
+    public function detail($id)
+    {
+        $newsModel = new NewsModel();
+        $newsItem = $newsModel->find($id);
+
+        if (!$newsItem) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("News with ID $id not found.");
+        }
+
+        return view('news2', ['newsItem' => $newsItem]);
+    }
+
+
 }

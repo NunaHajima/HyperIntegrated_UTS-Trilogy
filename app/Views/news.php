@@ -13,13 +13,11 @@
             <div class="news-content">
                 <h2><?= esc($newsItem['judul']) ?></h2>
                 <p><?= esc(substr($newsItem['berita'], 0, 100)) ?>...</p>
-                <a href="/news2<?= esc($newsItem['id']) ?>">Read more</a>
+                <a href="/news/detail/<?= esc($newsItem['id']) ?>">Read more</a>
             </div>
         </article>
     <?php endforeach; ?>
-
-    <!-- Tampilkan link pagination -->
-    <div class="col-12">
+    <div class="pagination">
         <?= $pager->links('news', 'custom_pagination2') ?>
     </div>
 </div>

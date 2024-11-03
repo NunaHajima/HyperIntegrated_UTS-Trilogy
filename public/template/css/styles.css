@@ -11181,3 +11181,9 @@ body {
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center; /* Untuk memusatkan konten */
+  margin: 20px 0; /* Optional: menambahkan margin di atas dan bawah */
+}
