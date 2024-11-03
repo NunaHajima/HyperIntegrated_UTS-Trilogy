@@ -4,7 +4,7 @@
         <?= $this->include('layout/navbar') ?>
     </head>
     <body>
-    <?= $this->renderSection('content') ?>    
+        <?= $this->renderSection('content') ?>    
     </body>
     <?= $this->include('layout/footer') ?>
     <?= $this->include('layout/scripts') ?>

@@ -1,37 +1,27 @@
 <?= $this->extend('layout/base') ?>
 <?= $this->section('content') ?>
-<section class="news"data-aos="slide-up" data-aos-once="true">
-<div class="text-center mb-1" data-aos="slide-up" data-aos-once="true">
-            <br>
-            <h2 class="fw-bolder">News</h2>
-        </div>
-            <article class="news-item"data-aos="slide-up" data-aos-once="true">
-                <img src="template/assets/contoh1.jpg" alt="News Image 1">
-                <div class="news-content">
-                    <h2>News Title 1</h2>
-                    <p>The news provides us with an up-to-date understanding of local, national, and international events...</p>
-                    <a href="/news2">Read more</a>
-                </div>
-            </article>
+<div class="news" data-aos="slide-up" data-aos-once="true">
+    <div class="text-center mb-1" data-aos="slide-up" data-aos-once="true">
+        <br><br><br><br>
+        <h2 class="fw-bolder">News</h2>
+    </div>
 
-            <article class="news-item"data-aos="slide-up" data-aos-once="true">
-                <img src="template/assets/contoh1.jpg" alt="News Image 2">
-                <div class="news-content">
-                    <h2>News Title 2</h2>
-                    <p>Staying abreast of current events fosters a sense of global awareness...</p>
-                    <a href="/news2">Read more</a>
-                </div>
-            </article>
+    <!-- Loop melalui data berita yang diambil dari controller -->    
+    <?php foreach ($news as $newsItem): ?>
+        <article class="news-item" data-aos="slide-up" data-aos-once="true">
+            <img src="/photos/<?= esc($newsItem['photo']) ?>" alt="News Image">
+            <div class="news-content">
+                <h2><?= esc($newsItem['judul']) ?></h2>
+                <p><?= esc(substr($newsItem['berita'], 0, 100)) ?>...</p>
+                <a href="/news2<?= esc($newsItem['id']) ?>">Read more</a>
+            </div>
+        </article>
+    <?php endforeach; ?>
 
-            <article class="news-item"data-aos="slide-up" data-aos-once="true">
-                <img src="template/assets/contoh1.jpg" alt="News Image 3">
-                <div class="news-content">
-                    <h2>News Title 3</h2>
-                    <p>Promoting a deeper understanding of the multifaceted world in which we live...</p>
-                    <a href="/news2">Read more</a>
-                </div>
-            </article>
-            <br>
-            <br>
-        </section>
+    <!-- Tampilkan link pagination -->
+    <div class="col-12">
+        <?= $pager->links('news', 'custom_pagination2') ?>
+    </div>
+</div>
+
 <?= $this->endSection() ?>
