@@ -11227,3 +11227,17 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.fixed-img-size {
+  width: 100%;         /* Sesuaikan dengan lebar card */
+  height: 200px;       /* Tinggi tetap untuk semua gambar */
+  object-fit: cover;   /* Memotong gambar agar sesuai dengan ukuran tanpa mengubah proporsi */
+  border-radius: 5px;  /* Opsi tambahan: menambahkan radius untuk sudut gambar */
+}
+
+.fixed-img-size2 {
+  width: 100%;         /* Sesuaikan dengan lebar card */
+  height: 400px;       /* Tinggi tetap untuk semua gambar */
+  object-fit: cover;   /* Memotong gambar agar sesuai dengan ukuran tanpa mengubah proporsi */
+  border-radius: 5px;  /* Opsi tambahan: menambahkan radius untuk sudut gambar */
+}

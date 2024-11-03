@@ -10,7 +10,7 @@
         </div>
         <?php foreach ($about as $aboutItem): ?>
             <article class="news-item" data-aos="slide-up" data-aos-once="true">
-            <img src="/photos/<?= esc($aboutItem['photo']) ?>" alt="Image 1" class="rounded-circle img-circle">
+            <img class="card-img-top fixed-img-size2" src="/photos/<?php echo $aboutItem['photo']; ?>" alt="..." />
                 <div class="news-content">
                     <h2><?= esc($aboutItem['name']) ?></h2>
                     <p><?= esc(substr($aboutItem['job'], 0, 100)) ?></p>

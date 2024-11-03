@@ -14,9 +14,8 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" id="deskripsi" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Deskripsi Portofolio" required name="deskripsi">
+                    <label for="deskripsi">Deskripsi Portofolio</label>
+                    <textarea class="form-control" id="deskripsi" rows="5" placeholder="Masukkan Deskripsi" required name="deskripsi"></textarea>
                 </div>
                 <br>
                 <div class="form-group">

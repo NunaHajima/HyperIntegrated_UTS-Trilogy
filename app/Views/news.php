@@ -9,7 +9,7 @@
     <!-- Loop melalui data berita yang diambil dari controller -->    
     <?php foreach ($news as $newsItem): ?>
         <article class="news-item" data-aos="slide-up" data-aos-once="true">
-            <img src="/photos/<?= esc($newsItem['photo']) ?>" alt="News Image" style="width: 400px; height: 200px; object-fit: cover;">
+        <img class="card-img-top fixed-img-size2" src="/photos/<?php echo $newsItem['photo']; ?>" alt="..." />
             <div class="news-content">
                 <h2><?= esc($newsItem['judul']) ?></h2>
                 <p><?= esc(substr($newsItem['berita'], 0, 100)) ?>...</p>

@@ -13,11 +13,12 @@
                     <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
                         placeholder="Masukkan Judul Portofolio" required name="judul" value="<?= $data['judul'] ?>">
                 </div>
+                <br>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" id="deskripsi" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Deskripsi Portofolio" required name="deskripsi" value="<?= $data['deskripsi'] ?>">
+                    <label for="deskripsi">Deskripsi Portofolio</label>
+                    <textarea class="form-control" id="deskripsi" rows="5" placeholder="Masukkan Deskripsi Portofolio" required name="deskripsi"><?= $data['deskripsi'] ?></textarea>
                 </div>
+                <br>                
                 <div class="form-group">
                     <label for="photo">Photo</label>
                     <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">

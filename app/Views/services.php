@@ -7,7 +7,7 @@
         </div>
         <?php foreach ($service as $serviceItem): ?>
             <article class="news-item" data-aos="slide-up" data-aos-once="true">
-                <img src="/photos/<?= esc($serviceItem['photo']) ?>" alt="News Image" style="width: 400px; height: 200px; object-fit: cover;">
+            <img class="card-img-top fixed-img-size2" src="/photos/<?php echo $serviceItem['photo']; ?>" alt="..." />
                 <div class="news-content">
                     <h2><?= esc($serviceItem['judul']) ?></h2>
                     <p><?= esc(substr($serviceItem['service'], 0, 100)) ?>...</p>

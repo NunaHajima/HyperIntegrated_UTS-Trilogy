@@ -83,7 +83,7 @@ class PortofolioController extends ResourceController
         $portofoliocrud = [
             "id" => uniqid(),
             "judul" => $this->request->getPost('judul'),
-            "deskrisi" => $this->request->getPost('deskrisi'),
+            "deskripsi" => $this->request->getPost('deskripsi'),
             "photo" => $fileName, // Kita simpan nama filenya saja
             "photo2" => $fileName2, // Kita simpan nama filenya saja
             "photo2" => $fileName3, // Kita simpan nama filenya saja

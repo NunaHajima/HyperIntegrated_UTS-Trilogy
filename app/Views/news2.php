@@ -7,7 +7,7 @@
     <div class="text-center my-4">
         <img src="/photos/<?= esc($newsItem['photo']) ?>" alt="News Image" class="img-fluid w-100" style="object-fit: cover;">
     </div>
-    <p><?= esc($newsItem['berita']) ?></p>
+    <p style="text-align: justify;"><?= nl2br(esc($newsItem['berita'])) ?></p>
 </section>
 
 <?= $this->endSection() ?>

@@ -38,7 +38,7 @@
         </button>
     </div>
     <!-- Bootstrap Carousel End -->
-    <p><?= esc($portofolioItem['deskripsi']) ?></p>
+    <p style="text-align: justify;"><?= nl2br(esc($portofolioItem['deskripsi'])) ?></p>
     <a href="https://wa.me/628562900777" target="_blank">
         <img src="/template/assets/contactus.png" alt="News Image" class="img-fluid custom-img2">
     </a>

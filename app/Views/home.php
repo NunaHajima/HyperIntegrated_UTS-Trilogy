@@ -51,8 +51,8 @@
                             <!-- Wrap card in a link -->
                             <a href="/news/detail/<?php echo $newsItem['id']; ?>" style="text-decoration: none; color: inherit;">
                                 <div class="card h-55">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="/photos/<?php echo $newsItem['photo']; ?>" alt="..." />
+                                    <!-- Product image with fixed size -->
+                                    <img class="card-img-top fixed-img-size" src="/photos/<?php echo $newsItem['photo']; ?>" alt="..." />
                                     <!-- Product details-->
                                     <div class="card-body p-4">
                                         <div class="text-center">
