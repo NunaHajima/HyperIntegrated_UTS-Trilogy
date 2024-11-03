@@ -11187,3 +11187,43 @@ body {
   justify-content: center; /* Untuk memusatkan konten */
   margin: 20px 0; /* Optional: menambahkan margin di atas dan bawah */
 }
+
+.img-circle {
+  width: 100px;  /* Ubah ukuran sesuai kebutuhan */
+  height: 100px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Atur tinggi judul untuk serasi */
+.card .text-center {
+  height: 50px; /* Tentukan tinggi tetap untuk judul */
+  overflow: hidden; /* Sembunyikan overflow jika judul terlalu panjang */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Membatasi judul menjadi dua baris dengan ellipsis */
+.card h5 {
+  font-size: 16px;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Batasi menjadi 2 baris */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

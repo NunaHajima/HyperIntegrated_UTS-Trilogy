@@ -48,17 +48,20 @@
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
                     <?php foreach ($news as $newsItem): ?>
                         <div class="col mb-5">
-                            <div class="card h-55">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="/photos/<?php echo $newsItem['photo']; ?>" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- News title-->
-                                        <h5 style="font-size: 16px;"><?php echo $newsItem['judul']; ?></h5>
+                            <!-- Wrap card in a link -->
+                            <a href="/news/detail/<?php echo $newsItem['id']; ?>" style="text-decoration: none; color: inherit;">
+                                <div class="card h-55">
+                                    <!-- Product image-->
+                                    <img class="card-img-top" src="/photos/<?php echo $newsItem['photo']; ?>" alt="..." />
+                                    <!-- Product details-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- News title-->
+                                            <h5><?php echo $newsItem['judul']; ?></h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     <?php endforeach; ?>
                 </div>

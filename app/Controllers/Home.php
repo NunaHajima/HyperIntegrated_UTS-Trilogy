@@ -16,7 +16,7 @@ class Home extends BaseController
 
         // Inisialisasi NewsModel
         $newsModel = new NewsModel();
-        $newsData = $newsModel->select('photo, judul')->orderBy('id', 'DESC')->findAll(6);
+        $newsData = $newsModel->select('id, photo, judul, berita')->orderBy('id', 'DESC')->findAll(6);
 
         // Inisialisasi TestimoniModel
         $testimoniModel = new TestimoniModel();
