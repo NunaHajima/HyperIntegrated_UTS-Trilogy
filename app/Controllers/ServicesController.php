@@ -72,7 +72,7 @@ class ServicesController extends ResourceController
         $servicecrud = [
             "id" => uniqid(),
             "judul" => $this->request->getPost('judul'),
-            "service" => $this->request->getPost('berita'),
+            "service" => $this->request->getPost('service'),
             "photo" => $fileName, // Kita simpan nama filenya saja
         ];
 
@@ -119,7 +119,7 @@ class ServicesController extends ResourceController
 
         $servicecrud = [
             "judul" => $this->request->getPost('judul'),
-            "service" => $this->request->getPost('berita'),
+            "service" => $this->request->getPost('service'),
             "photo" => $fileName, // Kita simpan nama filenya saja
         ];
 

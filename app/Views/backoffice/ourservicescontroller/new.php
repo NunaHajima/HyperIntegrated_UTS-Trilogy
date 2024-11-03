@@ -8,14 +8,14 @@
             <form action="/servicescontroller" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
-                    <label for="judul">Judul Berita</label>
+                    <label for="judul">Judul</label>
                     <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" 
                         placeholder="Masukkan Judul " required name="judul">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="berita">Berita Terbaru</label>
-                    <textarea class="form-control" id="berita" rows="5" placeholder="Masukkan Deskripsi Terbaru" required name="berita"></textarea>
+                    <label for="service">Deskripsi</label>
+                    <textarea class="form-control" id="service" rows="5" placeholder="Masukkan Deskripsi Terbaru" required name="service"></textarea>
                 </div>
                 <br>
                 <div class="form-group">

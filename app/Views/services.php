@@ -5,24 +5,16 @@
             <br><br><br><br>
             <h2 class="fw-bolder">Our Services</h2>
         </div>
-            <article class="news-item"data-aos="slide-up" data-aos-once="true">
-                <img src="template/assets/contoh1.jpg" alt="News Image 1">
+        <?php foreach ($service as $serviceItem): ?>
+            <article class="news-item" data-aos="slide-up" data-aos-once="true">
+                <img src="/photos/<?= esc($serviceItem['photo']) ?>" alt="News Image">
                 <div class="news-content">
-                    <h2>News Title 1</h2>
-                    <p>The news provides us with an up-to-date understanding of local, national, and international events...</p>
-                    <a href="/services2">(Learn more about the web-based system)</a>
+                    <h2><?= esc($serviceItem['judul']) ?></h2>
+                    <p><?= esc(substr($serviceItem['service'], 0, 100)) ?>...</p>
+                    <a href="/service/detail/<?= esc($serviceItem['id']) ?>">Read more</a>
                 </div>
             </article>
-
-            <article class="news-item"data-aos="slide-up" data-aos-once="true">
-                <img src="template/assets/contoh1.jpg" alt="News Image 2">
-                <div class="news-content">
-                    <h2>News Title 2</h2>
-                    <p>Staying abreast of current events fosters a sense of global awareness...</p>
-                    <a href="/services2">(Learn more about the Mobile Application System)</a>
-                </div>
-            </article>
-            <br>
-            <br>
+        <?php endforeach; ?>
+        <br>
         </section>
 <?= $this->endSection() ?>
