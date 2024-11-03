@@ -59,8 +59,16 @@
                                 <li><a class="dropdown-item" href="/testimonicontroller/new">Add Testimoni</a></li>
                             </ul>
                         </li>
-                        <li><a class="dropdown-item" href="#">Slider</a></li>
-                    </ul>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="testimoniDropdown" data-bs-toggle="dropdown">
+                                Slider
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="testimoniDropdown" style="background-color: #f8f9fa; border-radius: 5px;">
+                                <li><a class="dropdown-item" href="/slidercontroller">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="/slidercontroller/new">Add Image</a></li>
+                            </ul>
+                        </li>
+                    </ul>                    
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout</a>

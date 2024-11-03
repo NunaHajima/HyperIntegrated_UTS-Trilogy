@@ -37,6 +37,10 @@ $routes->group('', ['filter' => 'authMiddleware'], function($routes) {
     $routes->resource('testimonicontroller');
 });
 
+$routes->group('', ['filter' => 'authMiddleware'], function($routes) {
+    $routes->resource('slidercontroller');
+});
+
 /*Login*/
 $routes->resource('login');
 $routes->resource('register');
