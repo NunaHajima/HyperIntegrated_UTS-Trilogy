@@ -31,7 +31,7 @@
                     <?php } ?>
                 </div>
                 <div class="form-group">
-                    <label for="photo">Photo</label>
+                    <label for="photo">Photo (Portrait)</label>
                     <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">
                 </div>
                 <br>

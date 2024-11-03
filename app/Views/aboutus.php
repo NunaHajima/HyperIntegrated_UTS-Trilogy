@@ -5,20 +5,24 @@
             <br><br><br><br>
             <h2 class="fw-bolder">About Us</h2>
         </div>
-        <div class="text-start mb-1" data-aos="slide-up" data-aos-once="true">
-            <h2 class="custom-font-size2 font-size: 20px;">Meet Our Team</h2>
+        <div class="text-start5 mb-1" data-aos="slide-up" data-aos-once="true">
+            <h2 class="custom-font-size2 title-padding5">Meet Our Team</h2>
         </div>
         <?php foreach ($about as $aboutItem): ?>
-            <article class="news-item" data-aos="slide-up" data-aos-once="true">
-            <img class="card-img-top fixed-img-size2" src="/photos/<?php echo $aboutItem['photo']; ?>" alt="..." />
-                <div class="news-content">
-                    <h2><?= esc($aboutItem['name']) ?></h2>
-                    <p><?= esc(substr($aboutItem['job'], 0, 100)) ?></p>
+            <article class="news-item5" data-aos="slide-up" data-aos-once="true">
+                <img src="/photos/<?php echo $aboutItem['photo']; ?>" alt="Testimoni Image" class="news-image5">
+                <div class="news-content5">
+                    <div>
+                        <h2 class="news-title5"><?= nl2br(esc($aboutItem['name'])) ?></h2>
+                    </div>
+                    <div>
+                        <p class="news-description5"><?= esc(substr($aboutItem['job'], 0, 100)) ?></p>
+                    </div>
                 </div>
             </article>
         <?php endforeach; ?>
-        <div class="text-start mb-1" data-aos="slide-up" data-aos-once="true">
-            <h2 class="custom-font-size2 font-size: 20px">Contact Us :</h2>
+        <div class="text-start5 mb-1" data-aos="slide-up" data-aos-once="true">
+            <h2 class="custom-font-size2 title-padding5">Contact Us</h2>
         </div>
         <div class="text-center mb-1" data-aos="slide-up" data-aos-once="true">
             <h2 class="custom-font-size3">CV. Hyper Integrated Technology</h2>

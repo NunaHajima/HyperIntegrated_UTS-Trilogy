@@ -11067,7 +11067,7 @@ textarea.form-control-lg {
   font-size: 24px;
 }
 .custom-font-size3 {
-  font-size: 18px; /* atau ukuran yang diinginkan */
+  font-size: 17px; /* atau ukuran yang diinginkan */
   font-weight: normal;
 }
 
@@ -11240,4 +11240,55 @@ body {
   height: 400px;       /* Tinggi tetap untuk semua gambar */
   object-fit: cover;   /* Memotong gambar agar sesuai dengan ukuran tanpa mengubah proporsi */
   border-radius: 5px;  /* Opsi tambahan: menambahkan radius untuk sudut gambar */
+}
+
+.img-fluid2 {
+  max-width: 100%;
+  height: 50%;
+}
+.rounded-circle2 {
+  border-radius: 80% !important;
+}
+
+.news-item5 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: flex-start; /* Menjaga agar konten sejajar di atas */
+  width: 80%; /* Memastikan kotak melebar penuh */
+  margin: 0 auto;
+}
+
+.news-image5 {
+  width: 200px; /* Atur lebar gambar dalam px */
+  height: auto; /* Atur tinggi agar mengikuti proporsi gambar */
+  margin-right: 15px; /* Jarak antara gambar dan teks */
+  border-radius: 5%;
+}
+
+.news-content5 {
+  max-width: 500px; /* Batas lebar konten teks jika diperlukan */
+}
+
+.news-title5 {
+  font-size: 20px; /* Ukuran font judul dalam px */
+  margin: 0;
+}
+
+.news-description5 {
+  font-size: 15px; /* Ukuran font deskripsi dalam px */
+  margin: 5px 0 0;
+}
+
+.text-start5 {
+  padding-left: 50px; /* Atur jarak dari kiri untuk keseluruhan kontainer */
+}
+
+.title-padding5 {
+  font-size: 25px; /* Ukuran font */
+  margin-left: 10px; /* Atur jarak tambahan dari kiri untuk judul */
 }

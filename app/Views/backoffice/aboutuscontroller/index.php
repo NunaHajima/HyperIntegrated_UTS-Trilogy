@@ -22,7 +22,7 @@
                         <td><?= $no += 1; ?></td>
                         <td><?= implode(' ', array_slice(explode(' ', $item['name']), 0, 80)) . (str_word_count($item['name']) > 10 ? '...' : '') ?></td>
                         <td><?= implode(' ', array_slice(explode(' ', $item['job']), 0, 80)) . (str_word_count($item['job']) > 10 ? '...' : '') ?></td>
-                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 300px; height: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
+                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 100px; height: 100px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
                         <td class="text-center align-middle" style="height: 100px;">
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
                                 <a href="/aboutuscontroller/<?= $item['id'] ?>/edit" 

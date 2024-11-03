@@ -37,7 +37,7 @@
                                 ?>
                             </div>
                         </td>
-                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 300px; height: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
+                        <td><img src="/photos/<?= $item['photo'] ?>" alt="" style="width: 100px; height: 100px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);"></td>
                         <td class="text-center align-middle" style="height: 100px;">
                             <div class="d-flex justify-content-center align-items-center" style="gap: 4px;">
                                 <a href="/testimonicontroller/<?= $item['id'] ?>/edit" 

@@ -10,8 +10,7 @@
 
                 <div class="form-group">
                     <label for="name">Nama</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" 
-                        placeholder="Masukkan Nama" required name="name" value="<?= $data['name'] ?>">
+                    <textarea class="form-control" id="name" rows="5" placeholder="Masukkan Anggota Team" required name="name"><?= $data['name'] ?></textarea>
                 </div>
                 <br>
                 <div class="form-group">
