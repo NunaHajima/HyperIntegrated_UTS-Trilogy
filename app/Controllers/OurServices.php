@@ -16,7 +16,7 @@ class OurServices extends BaseController
         $this->serviceModel = new OurserviceModel();
     }
 
-    public function index(): string
+    public function index()
     {
         // Buat instance model
         $serviceModel = new OurserviceModel();

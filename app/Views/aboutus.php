@@ -2,7 +2,7 @@
 <?= $this->section('content') ?>
 <section class="news2"data-aos="slide-up" data-aos-once="true">
 <div class="text-center mb-1" data-aos="slide-up" data-aos-once="true">
-            <br>
+            <br><br><br><br>
             <h2 class="fw-bolder">About Us</h2>
         </div>
         <div class="text-start mb-1" data-aos="slide-up" data-aos-once="true">

@@ -13,7 +13,7 @@ $routes->get('news/detail/(:num)', 'News::detail/$1');
 $routes->get('/services', 'OurServices::index');
 $routes->get('service/detail/(:num)', 'OurServices::detail/$1');
 $routes->get('/portofolio', 'Portofolio::index');
-$routes->get('/portofolio2', 'Portofolio2::index');
+$routes->get('portofolio/detail/(:num)', 'Portofolio::detail/$1');
 $routes->get('/aboutus', 'AboutUs::index');
 
 /*Admin CRUD*/

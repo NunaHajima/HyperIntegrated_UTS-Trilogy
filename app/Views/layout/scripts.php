@@ -24,5 +24,6 @@
 </script>
 <script src="path/to/bootstrap.bundle.js"></script> <!-- Sesuaikan dengan path bootstrap Anda -->
     <script src="path/to/custom.js"></script> <!-- Tambahkan jika ada custom JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
