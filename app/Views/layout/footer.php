@@ -14,7 +14,7 @@
                     <a class="nav-link text-white" href="/news">- News</a>
                     <a class="nav-link text-white" href="/services">- Our Services</a>
                     <a class="nav-link text-white" href="/portofolio">- Portofolio</a>
-                    <a class="nav-link text-white" href="">- About Us</a>
+                    <a class="nav-link text-white" href="/aboutus">- About Us</a>
                 </div>
             </div>
             <br>

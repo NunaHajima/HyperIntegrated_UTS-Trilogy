@@ -1,7 +1,7 @@
 <html>
     <head>
-        <?= $this->include('backoffice/layoutbase/head') ?>
+        <?= $this->include('/backoffice/layoutbase/head') ?>
     </head>
         <?= $this->renderSection('content') ?>
-        <?= $this->include('backoffice/layoutbase/scripts') ?>
+        <?= $this->include('/backoffice/layoutbase/scripts') ?>
 </html>
